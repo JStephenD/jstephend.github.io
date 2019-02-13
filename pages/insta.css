@@ -68,7 +68,11 @@ h1, h2, h3, h4, h5, h6, p{
     width: 600px;
     height: 700px;
 }
-.img-ig{
-    height: 70%;
-    width: 60%;
+.img-ig-portrait{
+    height: 85%;
+    width: auto;
+}
+.img-ig-landscape{
+    width: 85%;
+    height: auto;
 }
