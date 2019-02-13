@@ -1,0 +1,74 @@
+body {
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6, p{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+.navbar{
+    height: 60px;
+    position: relative;
+}
+.navbar-brand{
+    height: 40px;
+    width: auto;
+}
+.nav-link:hover{
+    background-color: rgba(0, 0, 0, .2);
+}
+.navbar-logo{
+    height: 40px;
+    width: auto;
+    display: inline-block;
+}
+.page-footer{
+    background-color: rgba(51, 17, 20, 0.7);
+    margin-top: 80px;
+    padding-bottom: 10px;
+}
+.appdev-container{
+    margin-bottom: 20px;
+    background-color: dimgray;
+    border-bottom-color: white;
+    border-bottom-style: dotted;
+}
+.appdevtext{
+    text-align: center;
+    color: wheat;
+    font-size: 20px;
+}
+.logo{
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-left: 50px;
+}
+.social-media{
+    display: inline-block;
+    color: white;
+    margin: auto;
+}
+.social-media-text{
+    font-weight: 500;
+    color: burlywood;
+}
+.logo2{
+    width: 20px;
+    height: 20px;
+}
+.instagram{
+    margin-top: 100px;
+}
+.img-container{
+    display: block;
+    width: 600px;
+    height: 700px;
+}
+.img-ig{
+    height: 70%;
+    width: 60%;
+}
