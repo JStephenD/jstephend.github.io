@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .instalogo{
     float: right;
-    height: 35;
+    height: 50px;
     display: block;
     margin-top: 3px;
     vertical-align: middle;
