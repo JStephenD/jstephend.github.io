@@ -67,6 +67,7 @@ h1, h2, h3, h4, h5, h6, p{
     display: block;
     width: 600px;
     height: 700px;
+    border: 1px solid black;
 }
 .img-ig-portrait{
     height: 85%;
