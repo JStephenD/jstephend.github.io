@@ -33,7 +33,6 @@ h1, h2, h3, h4, h5, h6, p{
     vertical-align: middle;
     display: block;
     background-color: rgb(66, 103, 178);
-    display: block;
 }
 .fblogo{
     float: right;

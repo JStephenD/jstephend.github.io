@@ -33,11 +33,10 @@ h1, h2, h3, h4, h5, h6, p{
     vertical-align: middle;
     display: block;
     background-color: rgb(66, 103, 178);
-    display: block;
 }
 .instalogo{
     float: right;
-    height: 35px;
+    height: 35;
     display: block;
     margin-top: 3px;
     vertical-align: middle;
