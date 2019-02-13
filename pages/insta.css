@@ -25,43 +25,6 @@ h1, h2, h3, h4, h5, h6, p{
     width: auto;
     display: inline-block;
 }
-.instaheader{
-    margin-top: 60px;
-    background-color: white;
-}
-.instaheader.row.col-{
-    vertical-align: middle;
-    display: block;
-    background-color: rgb(66, 103, 178);
-}
-.instalogo{
-    float: right;
-    height: 50px;
-    display: block;
-    margin-top: 3px;
-    vertical-align: middle;
-}
-.header-tagline{
-    float: left;
-    color: aliceblue;
-    font-size: 130%;
-    display: block;
-    margin-top: 10px;
-}
-.header-name{
-    float: right;
-    color: aliceblue;
-    font-size: 130%;
-    display: block;
-    margin-top: 10px;
-}
-.instalogo{
-    float: right;
-    height: 35px;
-    display: block;
-    margin-top: 3px;
-    vertical-align: middle;
-}
 .page-footer{
     background-color: rgba(51, 17, 20, 0.7);
     margin-top: 80px;
