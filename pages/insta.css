@@ -25,6 +25,17 @@ h1, h2, h3, h4, h5, h6, p{
     width: auto;
     display: inline-block;
 }
+.instaheader{
+    margin-top: 60px;
+    background-color: white;
+}
+.instalogo{
+    float: right;
+    height: 35px;
+    display: block;
+    margin-top: 3px;
+    vertical-align: middle;
+}
 .page-footer{
     background-color: rgba(51, 17, 20, 0.7);
     margin-top: 80px;
