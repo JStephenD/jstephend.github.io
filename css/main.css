@@ -25,19 +25,29 @@ h1, h2, h3, h4, h5, h6, p{
     width: auto;
     display: inline-block;
 }
+.nav-link.active{
+    background-color: rgba(0, 0, 0, .1);
+}
+.content.active{
+    display: block;
+}
+.content{
+    display: none;
+}
 .fbheader{
-    margin-top: 60px;
+    margin-top: 36px;
+    /* top: 30px; */
+    /* position: relative; */
     background-color: rgb(66, 103, 178);
 }
 .fbheader.row.col-{
     vertical-align: middle;
-    display: block;
+    display: inline-block;
     background-color: rgb(66, 103, 178);
 }
 .fblogo{
-    float: right;
     height: 35px;
-    display: block;
+    display: inline-block;
     margin-top: 3px;
     vertical-align: middle;
 }
