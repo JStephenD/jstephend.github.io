@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6, p{
     background-color: #808080;
 }
 .logo{
-    display: inline;
+    display: inline-block;
     height: 35px;
     width: 35px;
 }
@@ -184,7 +184,12 @@ h1, h2, h3, h4, h5, h6, p{
     text-decoration: none;
     color: inherit;
 }
-
+.slider-link{
+    display: inline-block;
+}
+.slider-list{
+    display: inline-block;
+}
 .img-rounded{
     border-radius: 100%;
 }
@@ -193,9 +198,39 @@ h1, h2, h3, h4, h5, h6, p{
     height: 100px;
     width: auto;
 }
+.cardslider{
+    overflow: hidden;
+}
 .friends-name{
     margin-left: 1em;
     display: inline-block;
+}
+.slider{
+    width: 6000px;
+    height: 250px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.slider .slides{
+    display: inline-block;
+    width: 6000x;
+    height: inherit;
+    margin: 0;
+    margin-left: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+.slider .slide{
+    float: left;
+    list-style-type: none;
+    width: 250px;
+    height: 250px;
+}
+.slider .slide-image{
+    width: 250px;
+    height: auto;
 }
 
 @media only screen and (max-width: 1920px){
