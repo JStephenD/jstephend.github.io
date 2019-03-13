@@ -10,11 +10,11 @@ $(function(){
         
         var $panelToShow = $(this).attr('rel');
         
-        $content_container.find('.content.active').slideUp(400, showContent);
+        $content_container.find('.content.active').slideUp(1000, showContent);
             
         function showContent(){
             $(this).removeClass('active');
-            $('#'+$panelToShow).slideDown(400, function(){
+            $('#'+$panelToShow).slideDown(1000, function(){
                 $(this).addClass('active');
             });
         };

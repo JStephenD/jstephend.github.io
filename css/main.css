@@ -1,7 +1,11 @@
 body {
     background: #fff;
+    background-image: url("../assets/images/DSC_3136.JPG.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: 50%;
+    background-position-y: 30vh;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-    color: #545454;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
 }
@@ -89,24 +93,35 @@ h1, h2, h3, h4, h5, h6, p{
 .myname{
     position: relative;
     color: dimgray;
-    margin-left: 50px;
-    display: block;
+    margin-left: 10px;
+    display: inline-block;
+    background-color: whitesmoke;
 }
 .loremipsum{
     position: relative;
     color: dimgray;
-    margin-left: 50px;
-    display: block;
-    top: -35px;
+    margin-left: 10px;
+    background-color: whitesmoke;
+    display: inline-block;
 }
 .mini-nav{
     margin-bottom: 50px;
+}
+.p1{
+    display: inline-block;
+    background-color: whitesmoke;
+}
+.p2{
+    display: inline;
+    background-color: whitesmoke;
 }
 .aboutmetxt{
     font-size: 30px;
     text-align: center;
     position: relative;
-    top: -20px;
+    background-color: whitesmoke;
+    display: block;
+    margin-left: auto;
 }
 .paragraph{
     font-size: 20px;
@@ -231,6 +246,7 @@ h1, h2, h3, h4, h5, h6, p{
 .slider .slide-image{
     width: 250px;
     height: auto;
+    vertical-align: middle;
 }
 
 @media only screen and (max-width: 1920px){
