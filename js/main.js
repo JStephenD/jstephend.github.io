@@ -33,9 +33,10 @@ $(function(){
         var $slider = $friends_ul.find('#'+$ref);
         var $slidecontainer = $slider.find('.slides');
         var $slides = $slidecontainer.find('.slide');
+        console.log($slides);
 
+        var offset = 4 - ($slides.length % 4);
         var interval;
-        var state;
 
         sliderOn();
 
@@ -43,7 +44,7 @@ $(function(){
             interval = setInterval(function(){
                 $slidecontainer.animate({'margin-left': '-='+width}, animationspeed, function(){
                     currentslide++;
-                    if (currentslide === $slides.length-4 || currentslide >= $slides.length-4){
+                    if (currentslide === $slides.length-offset || currentslide >= $slides.length-offset){
                         currentslide = 1;
                         $slidecontainer.css('margin-left', 0);
                     }
