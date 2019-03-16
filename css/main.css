@@ -1,10 +1,10 @@
 body {
     background: #fff;
     background-image: url("../assets/images/DSC_3136.JPG.png");
+    background-size: auto;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position-x: 50%;
-    background-position-y: 30vh;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
@@ -250,16 +250,26 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 @media only screen and (max-width: 1920px){
+    body{
+        background-position-y: 30vh;
+    }
     .coverphoto{
         height: 400px;
     }    
 }
 @media only screen and (max-width: 1366px){
+    body{
+        background-position-y: 30vh;
+    }
     .coverphoto{
         height: 350px;
     }
 }
 @media only screen and (max-width: 720px){
+    body{
+        background-attachment: fixed;
+        background-position-y: 20%;
+    }
     .coverphoto{
         height: 300px;
     }

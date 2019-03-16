@@ -2,13 +2,20 @@
 <html>
     <head>
         <title>In a life of</title>
-        <link rel="stylesheet" href="insta.css">
+        <link rel="stylesheet" href="../css/insta.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/jquery-3.3.1.min.js"></script>
+        <script src="../js/insta.js"></script>
+
     </head>
     <body>
+        <!-- navbar -->
         <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
             <a class="navbar-brand" href="#"><img src="../assets/images/profile_pic.jpg" class="navbar-logo">@fishlmao</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,31 +28,135 @@
                 </div>
             </div>
         </nav>
-        <!-- navbar end -->
-        
-        <div class="container instagram">
-            <div class="row">
-                <div class="col-6 img-container">
-                    <img class="img-ig-portrait" src="../assets/images/insta_1.jpg">
+
+        <!-- Instagram -->
+        <!-- Header -->
+        <div class="header container-fluid">
+            <div class="row pt-4">
+                <div class="col"></div>
+                    <img class="dib fl ml-3" src="../assets/images/instaheader_1.JPG" alt="">
+                <div class="col-lg-7 col-sm-6"></div>
+                <div class="col-lg-2 col-sm-3 mt-2 fr">
+                    <img class="dib fl mr-3 header-img" src="../assets/images/instaheader_2.JPG" alt="">
+                    <img class="dib fl mr-3 header-img" src="../assets/images/instaheader_3.JPG" alt="">
+                    <img class="dib fl mr-3 header-img" src="../assets/images/instaheader_4.JPG" alt="">
                 </div>
-                <div class="col-6 img-container">
-                    <img class="img-ig-landscape" src="../assets/images/insta_2.jpg">
+                <div class="col"></div>
+            </div>
+        </div>
+        <div class="container-fluid body instagram">
+            <!-- Profile -->
+            <div class="container">
+                <div class="row pt-5 pb-5">
+                    <div class="col-1"></div>
+                    <div class="col-lg-3 col-sm-4">
+                        <img class="img-rounded" src="../assets/images/insta_profile.jpg" alt="">
+                    </div>
+                    <div class="col-lg-5 col-sm-6 pt-4">
+                        <div>
+                            <h3 class="db name pb-2">fishlmao5th</h3>
+                            <h5 class="di info"><b id="posts"></b></h5><h5 class="di info mr-3"> posts </h5>
+                            <h5 class="di info mr-3"><b> 285 </b> followers </h5>
+                            <h5 class="di info"><b> 140 </b> following </h5>
+                            <h5 class="db name pt-2 mt-2"><b>John Stephen Degillo</b></h5>
+                            <h5 class="di profile-desc">lwr brghtnss</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-0"></div>
                 </div>
-                <div class="col-6 img-container">
-                    <img class="img-ig-portrait" src="../assets/images/insta_3.JPG">
-                </div>
-                <div class="col-6 img-container">
-                    <img class="img-ig-landscape" src="../assets/images/insta_4.JPG">
-                </div>
-                <div class="col-6 img-container">
-                    <img class="img-ig-portrait" src="../assets/images/insta_5.JPG">
-                </div>
-                <div class="col-6 img-container">
-                    <img class="img-ig-portrait" src="../assets/images/insta_6.JPG">
+            </div>
+            <!-- Images -->
+            <div class="container images">
+                <div class="row mx-auto">
+                    <div class="img-ig-container mx-auto">
+                        <img class="img-ig" rel="img-1" src="../assets/images/insta_1.jpg">
+                        <div id="img-1" class="likes text-center">
+                                <img class="like-comment dib mx-auto" src="../assets/images/insta_heart.png" alt=""><p class="like-comment dib">19</p>
+                                <img class="like-comment dib mx-auto" src="../assets/images/insta_comment.png" alt=""><p class="like-comment dib">0</p>
+                        </div>
+                    </div>
+                    <div class="img-ig-container mx-auto">
+                        <img class="img-ig" rel="img-2" src="../assets/images/insta_2.jpg">
+                        <div id="img-2" class="likes text-center">
+                            <img class="like-comment dib mx-auto" src="../assets/images/insta_heart.png" alt=""><p class="like-comment dib">12</p>
+                            <img class="like-comment dib mx-auto" src="../assets/images/insta_comment.png" alt=""><p class="like-comment dib">1</p>
+                        </div>
+                    </div>
+                    <div class="img-ig-container mx-auto">
+                        <img class="img-ig" rel="img-3" src="../assets/images/insta_3.JPG">
+                        <div id="img-3" class="likes text-center">
+                            <img class="like-comment dib mx-auto" src="../assets/images/insta_heart.png" alt=""><p class="like-comment dib">27</p>
+                            <img class="like-comment dib mx-auto" src="../assets/images/insta_comment.png" alt=""><p class="like-comment dib">1</p>
+                        </div>
+                    </div>
+                    <div class="img-ig-container mx-auto">
+                        <img class="img-ig" rel="img-4" src="../assets/images/insta_4.JPG">
+                        <div id="img-4" class="likes text-center">
+                            <img class="like-comment dib mx-auto" src="../assets/images/insta_heart.png" alt=""><p class="like-comment dib">17</p>
+                            <img class="like-comment dib mx-auto" src="../assets/images/insta_comment.png" alt=""><p class="like-comment dib">0</p>
+                        </div>
+                    </div>
+                    <div class="img-ig-container mx-auto">
+                        <img class="img-ig" rel="img-5" src="../assets/images/insta_5.JPG">
+                        <div id="img-5" class="likes text-center">
+                            <img class="like-comment dib mx-auto" src="../assets/images/insta_heart.png" alt=""><p class="like-comment dib">26</p>
+                            <img class="like-comment dib mx-auto" src="../assets/images/insta_comment.png" alt=""><p class="like-comment dib">0</p>
+                        </div>
+                    </div>
+                    <div class="img-ig-container mx-auto">
+                        <img class="img-ig" rel="img-6" src="../assets/images/insta_6.JPG">
+                        <div id="img-6" class="likes text-center">
+                            <img class="like-comment dib mx-auto" src="../assets/images/insta_heart.png" alt=""><p class="like-comment dib">22</p>
+                            <img class="like-comment dib mx-auto" src="../assets/images/insta_comment.png" alt=""><p class="like-comment dib">1</p>
+                        </div>
+                    </div>           
+                    <div class="img-ig-container mx-auto">
+                        <img class="img-ig" rel="img-7" src="../assets/images/insta_7.JPG">
+                        <div id="img-7" class="likes text-center">
+                            <img class="like-comment dib mx-auto" src="../assets/images/insta_heart.png" alt=""><p class="like-comment dib">24</p>
+                            <img class="like-comment dib mx-auto" src="../assets/images/insta_comment.png" alt=""><p class="like-comment dib">0</p>
+                        </div>
+                    </div>           
+                    <div class="img-ig-container mx-auto">
+                        <img class="img-ig" rel="img-8" src="../assets/images/insta_8.JPG">
+                        <div id="img-8" class="likes text-center">
+                            <img class="like-comment dib mx-auto" src="../assets/images/insta_heart.png" alt=""><p class="like-comment dib">10</p>
+                            <img class="like-comment dib mx-auto" src="../assets/images/insta_comment.png" alt=""><p class="like-comment dib">1</p>
+                        </div>
+                    </div>           
+                    <div class="img-ig-container mx-auto">
+                        <img class="img-ig" rel="img-9" src="../assets/images/insta_9.JPG">
+                        <div id="img-9" class="likes text-center">
+                            <img class="like-comment dib mx-auto" src="../assets/images/insta_heart.png" alt=""><p class="like-comment dib">20</p>
+                            <img class="like-comment dib mx-auto" src="../assets/images/insta_comment.png" alt=""><p class="like-comment dib">1</p>
+                        </div>
+                    </div>           
+                    <div class="img-ig-container mx-auto">
+                        <img class="img-ig" rel="img-10" src="../assets/images/insta_10.JPG">
+                        <div id="img-10" class="likes text-center">
+                            <img class="like-comment dib mx-auto" src="../assets/images/insta_heart.png" alt=""><p class="like-comment dib">24</p>
+                            <img class="like-comment dib mx-auto" src="../assets/images/insta_comment.png" alt=""><p class="like-comment dib">3</p>
+                        </div>
+                    </div>           
+                    <div class="img-ig-container mx-auto">
+                        <img class="img-ig" rel="img-11" src="../assets/images/insta_11.JPG">
+                        <div id="img-11" class="likes text-center">
+                            <img class="like-comment dib mx-auto" src="../assets/images/insta_heart.png" alt=""><p class="like-comment dib">21</p>
+                            <img class="like-comment dib mx-auto" src="../assets/images/insta_comment.png" alt=""><p class="like-comment dib">0</p>
+                        </div>
+                    </div>           
+                    <div class="img-ig-container mx-auto">
+                        <img class="img-ig" rel="img-12" src="../assets/images/insta_12.JPG">
+                        <div id="img-12" class="likes text-center">
+                            <img class="like-comment dib mx-auto" src="../assets/images/insta_heart.png" alt=""><p class="like-comment dib">36</p>
+                            <img class="like-comment dib mx-auto" src="../assets/images/insta_comment.png" alt=""><p class="like-comment dib">2</p>
+                        </div>
+                    </div>           
                 </div>
             </div>
         </div>
-        <!-- insta content end -->
+
+        <!-- Footer -->
         <footer class="page-footer font-small indigo">
             <div class="container-fluid">
                 <div class="row appdev-container">
