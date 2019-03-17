@@ -127,6 +127,9 @@ h1, h2, h3, h4, h5, h6, p{
     height: auto;
     font-weight: 600;
 }
+.xd{
+    font-weight: 500;
+}
 .dib{
     display: inline-block;
 }
@@ -141,4 +144,61 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .db{
     display: block;
+}
+.ig-modal{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.ig-modal .modal-content{
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    position: relative;
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 50px;
+    transform: rotate(45deg);
+}
+.content{
+    display: flex;
+    align-items: center;
+}
+.showimagecontainer{
+    max-width: 100%;
+    max-height: 100%;
+    background-color: rgba(0,0,0,.1);
+    object-fit: contain;
+}
+.caption-container{
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    height: 80%;
+}
+#showimage{
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 20px;
+    
+    max-width: 50%;
+    max-height: 100%;
+    height: 80%;
+    width: auto;
+    object-fit: contain;
+}
+#caption{
+    font-size: 90%;
+}
+.w-15{
+    width: 15%;
 }

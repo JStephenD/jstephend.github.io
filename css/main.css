@@ -1,13 +1,7 @@
 body {
     background: #fff;
-    background-image: url("../assets/images/DSC_3136.JPG.png");
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position-x: 50%;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
 }
 h1, h2, h3, h4, h5, h6, p{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -55,6 +49,15 @@ h1, h2, h3, h4, h5, h6, p{
     margin-top: 3px;
     vertical-align: middle;
 }
+.bgimg{
+    position: absolute;
+    top: 0;
+    left: 25%;
+    size: auto;
+    z-index: -1;
+    justify-content: center;
+    align-items: center;
+}
 .header-tagline{
     float: left;
     color: aliceblue;
@@ -71,7 +74,6 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .cover-photo{
     display: block;
-    width: auto;
 }
 .coverbgcolor{
     background-color: #808080;
@@ -84,9 +86,9 @@ h1, h2, h3, h4, h5, h6, p{
 .profilepic{
     position: relative;
     margin: 0 auto;
-    height: 175px;
+    height: 20vh;
     width: auto;
-    top: -100px;
+    top: -80px;
     border-radius: 100%;
     float: left;
 }
@@ -137,9 +139,11 @@ h1, h2, h3, h4, h5, h6, p{
 #carousel-container{
     padding-top: 50px;
     padding-bottom: 50px;
+    width: 80%;
+    height: auto;
 }
 .carousel-item img{
-    height: 640px;
+    height: 20vh;
 }
 .carousel-item .carousel-caption h5, .carousel-item .carousel-caption p{
     font-weight: bolder;
@@ -148,6 +152,11 @@ h1, h2, h3, h4, h5, h6, p{
     display: inline-block;
     padding-left: 5px;
     padding-right: 5px;
+}
+.img-display{
+    max-width: 700px;
+    width: 80%;
+    object-fit: scale-down;
 }
 .page-footer{
     background-color: rgba(51, 17, 20, 0.7);
@@ -190,10 +199,14 @@ h1, h2, h3, h4, h5, h6, p{
 .schoolyear{
     float: right;
 }
-
 .cleanlink{
     text-decoration: none;
     color: inherit;
+    max-width: 100%;
+}
+.cleanlink li{
+    height: 100%;
+    min-height: 100px;
 }
 .cleanlink:hover{
     text-decoration: none;
@@ -249,28 +262,36 @@ h1, h2, h3, h4, h5, h6, p{
     vertical-align: middle;
 }
 
-@media only screen and (max-width: 1920px){
+@media all and (max-width: 1920px){
     body{
-        background-position-y: 30vh;
+        font-size: 16px
     }
     .coverphoto{
         height: 400px;
     }    
 }
-@media only screen and (max-width: 1366px){
-    body{
-        background-position-y: 30vh;
-    }
+@media all and (max-width: 1366px){
     .coverphoto{
         height: 350px;
     }
 }
-@media only screen and (max-width: 720px){
+@media all and (max-width: 720px){
     body{
-        background-attachment: fixed;
-        background-position-y: 20%;
+        font-size: 8px;
+        font-weight: 300;
     }
     .coverphoto{
-        height: 300px;
+        height: 100px;
+        width: 100px;
+    }
+    .friends-name{
+        font-size: 16px;
+    }
+    .img-friends{
+        width: auto;
+        height: 70px;
+    }
+    .fbheader{
+        font-size: 12px;
     }
 }
