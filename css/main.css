@@ -44,10 +44,32 @@ h1, h2, h3, h4, h5, h6, p{
     background-color: rgb(66, 103, 178);
 }
 .fblogo{
+    position: relative;
+    top: 0;
+    right: -90%;
     height: 35px;
     display: inline-block;
     margin-top: 3px;
     vertical-align: middle;
+}
+.header-name{
+    position: relative;
+    top: 0;
+    float: right;
+    display: inline-block;
+    color: aliceblue;
+    font-size: 130%;
+    display: block;
+    margin-top: 10px;
+}
+.header-tagline{
+    position: relative;
+    top: 0;
+    left: 15%;
+    color: aliceblue;
+    font-size: 130%;
+    display: block;
+    margin-top: 10px;
 }
 .bgimg{
     position: absolute;
@@ -58,20 +80,7 @@ h1, h2, h3, h4, h5, h6, p{
     justify-content: center;
     align-items: center;
 }
-.header-tagline{
-    float: left;
-    color: aliceblue;
-    font-size: 130%;
-    display: block;
-    margin-top: 10px;
-}
-.header-name{
-    float: right;
-    color: aliceblue;
-    font-size: 130%;
-    display: block;
-    margin-top: 10px;
-}
+
 .cover-photo{
     display: block;
 }
