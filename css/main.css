@@ -62,6 +62,24 @@ h1, h2, h3, h4, h5, h6, p{
     display: block;
     margin-top: 10px;
 }
+.slickcarousel{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 50%;
+    width: 80%;
+}
+.slickcarousel div{
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+.slickcarousel img{
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-caption{
+    background-color: rgba(255, 255, 255, 0.5);
+}
 .header-tagline{
     position: relative;
     top: 0;

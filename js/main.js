@@ -3,6 +3,7 @@ $(function(){
     var $content_container = $('.content-container');
     var $mini_nav = $content_container.find('.mini-nav')
     var $mini_nav_content = $mini_nav.find('.list-group-item');
+    var $slick = $('.slickcarousel');
 
     $($mini_nav_content).on('click', function(){
         $mini_nav.find('.active').removeClass('active');
@@ -26,33 +27,44 @@ $(function(){
     var $friends_div = $friends_ul.find('div');
 
     // FRIENDS TOGGLE DROPDOWN -- offline mode
-    // $friends_a.on('click', function(){
-    //     if ($(this).hasClass('collapsed')){
-    //         $(this).removeClass('collapsed');
-    //         $(this).attr('aria-expanded', 'false');
-    //     }
-    //     else{
-    //         $(this).addClass('collapsed');
-    //         $(this).attr('aria-expanded', 'true');
-    //     }
-    //     var $href = $(this).attr('href');
-    //     var $div = $friends_ul.find($href);
+    $friends_a.on('click', function(){
+        if ($(this).hasClass('collapsed')){
+            $(this).removeClass('collapsed');
+            $(this).attr('aria-expanded', 'false');
+        }
+        else{
+            $(this).addClass('collapsed');
+            $(this).attr('aria-expanded', 'true');
+        }
+        var $href = $(this).attr('href');
+        var $div = $friends_ul.find($href);
 
-    //     if ($div.hasClass('show')){
-    //         $div.removeClass().addClass('collapse');
-    //         $div.css({'height': ''});
-    //     }
-    //     else{
-    //         $('html,body').animate({
-    //             scrollTop: '-=0px'
-    //         });
-    //         $div.slideToggle(500);
-    //         $div.css({'height': '322'});
-    //         $.scrollTo($friends_div.find($href));
-    //         $div.removeClass().addClass('collapsing').delay(1000).removeClass('collapsing');
-    //         $div.removeClass().addClass('collapse').addClass('show');
-    //     }
-    // });
+        if ($div.hasClass('show')){
+            $div.removeClass().addClass('collapse');
+            $div.css({'height': ''});
+        }
+        else{
+            $('html,body').animate({
+                scrollTop: '-=0px'
+            });
+            $div.slideToggle(500);
+            $div.css({'height': '322'});
+            $.scrollTo($friends_div.find($href));
+            $div.removeClass().addClass('collapsing').delay(1000).removeClass('collapsing');
+            $div.removeClass().addClass('collapse').addClass('show');
+        }
+    });
+
+    // SLICK CAROUSEL
+    $slick.slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
 
     // FRIENDS SLIDER
     $friends_li.on('click', function(){
